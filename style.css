@@ -1,0 +1,340 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fb;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 760px;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.header h5 {
+    color: #00843D;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.header h6 {
+    color: #00843D;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.header h2 {
+    color: #00843D;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.search-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control {
+    height: 48px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    height: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* ==========================================
+   CAPTCHA
+========================================== */
+
+.captcha-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.captcha-box {
+    flex: 1;
+    height: 48px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    background: #f8f9fa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    user-select: none;
+}
+
+#reloadCaptcha {
+    width: 48px;
+}
+
+/* ==========================================
+   RESULT
+========================================== */
+
+.result-card {
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom: 25px;
+
+}
+
+.section-title {
+
+    margin-top: 25px;
+
+    margin-bottom: 12px;
+
+    padding-left: 10px;
+
+    border-left: 4px solid #00843D;
+
+    color: #00843D;
+
+    font-weight: 700;
+
+}
+
+.method-badge {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin: 5px;
+
+    border-radius: 30px;
+
+    background: #e9f3ff;
+
+    color: #00843D;
+
+    font-size: 14px;
+
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    color: #fff;
+
+    font-weight: 600;
+
+}
+
+.success {
+    background: #198754;
+}
+
+.primary {
+    background: #0d6efd;
+}
+
+.warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.danger {
+    background: #dc3545;
+}
+
+.secondary {
+    background: #6c757d;
+}
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-box {
+
+    background: #fff;
+
+    border-left: 5px solid #dc3545;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom: 25px;
+
+}
+
+.error-box h4 {
+
+    color: #dc3545;
+
+    margin-bottom: 15px;
+
+}
+
+/* ==========================================
+   NOTICE
+========================================== */
+
+.notice-box {
+
+    background: #fffbea;
+
+    border-left: 5px solid #ffc107;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+
+    margin-bottom: 30px;
+
+}
+
+.notice-box h5 {
+
+    color: #b8860b;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.notice-box ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+}
+
+.notice-box li {
+
+    margin-bottom: 10px;
+
+    line-height: 1.7;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+
+    padding-bottom: 25px;
+
+}
+
+.footer hr {
+
+    margin-bottom: 20px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+    .header h2{
+        font-size:26px;
+    }
+
+    .header h3{
+        font-size:20px;
+    }
+
+    .search-card,
+    .result-card,
+    .notice-box,
+    .error-box{
+
+        padding:20px;
+
+    }
+
+    .captcha-box{
+
+        font-size:18px;
+
+        letter-spacing:2px;
+
+    }
+
+}
