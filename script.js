@@ -187,7 +187,7 @@ Vui lòng kiểm tra lại số Căn cước công dân đã nhập.
 <p>
 
 Nếu vẫn không tra cứu được, vui lòng liên hệ
-Phòng Đào tạo và Công tác học sinh sinh viên để được hỗ trợ.
+Phòng Đào tạo và CTHSSV để được hỗ trợ.
 
 </p>
 
