@@ -9,7 +9,7 @@
 }
 
 body{
-    background:#f4f7fb;
+    background:#f7f9f8;
     font-family:"Be Vietnam Pro",sans-serif;
     color:#333;
     font-size:15px;
@@ -17,8 +17,8 @@ body{
 }
 
 .container{
-    max-width:760px;
-    padding-top:20px;
+    max-width:820px;
+    padding:18px 15px 30px;
 }
 
 /* ==========================================
@@ -27,45 +27,47 @@ body{
 
 .header{
     text-align:center;
-    margin-bottom:22px;
+    margin-bottom:18px;
 }
 
 .logo{
-    width:72px;
+    width:70px;
     height:auto;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .header h5{
     color:#00843D;
-    font-size:20px;
+    font-size:18px;
     font-weight:700;
-    margin-bottom:0;
+    margin-bottom:2px;
 }
 
 .header h6{
     color:#00843D;
-    font-size:17px;
-    font-weight:700;
-    margin-bottom:12px;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:10px;
 }
 
 .header h2{
     color:#00843D;
-    font-size:46px;
+    font-size:38px;
     font-weight:800;
-    margin-bottom:4px;
+    margin-bottom:5px;
+    letter-spacing:.5px;
 }
 
 .header h3{
-    font-size:22px;
-    font-weight:700;
+    font-size:20px;
+    font-weight:600;
+    color:#444;
     margin-bottom:6px;
 }
 
 .header p{
-    color:#666;
-    margin-bottom:0;
+    color:#777;
+    font-size:15px;
 }
 
 /* ==========================================
@@ -76,11 +78,13 @@ body{
 
     background:#fff;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:24px;
+    padding:22px 24px;
 
-    box-shadow:0 8px 22px rgba(0,0,0,.08);
+    border:1px solid #edf1f4;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06);
 
     margin-bottom:18px;
 
@@ -103,19 +107,39 @@ body{
     font-size:16px;
 
 }
+.form-control:focus{
 
+    border-color:#00843D;
+
+    box-shadow:0 0 0 .2rem rgba(0,132,61,.12);
+
+}
 .btn-primary{
 
-    height:52px;
+    height:50px;
 
-    border-radius:10px;
+    border:none;
 
-    font-size:18px;
+    border-radius:12px;
+
+    background:#00843D;
+
+    font-size:17px;
 
     font-weight:700;
 
-}
+    transition:.25s;
 
+}
+.btn-primary:hover{
+
+    background:#006e33;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 8px 18px rgba(0,132,61,.25);
+
+}
 /* ==========================================
    CAPTCHA
 ========================================== */
@@ -130,32 +154,17 @@ body{
 
 .captcha-box{
 
-    flex:1;
+    background:#f8faf9;
 
-    height:46px;
+    border:1px dashed #9fb9aa;
 
-    border:1px solid #ced4da;
+    color:#00843D;
 
-    border-radius:10px;
+    font-size:22px;
 
-    background:#f8f9fa;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:20px;
-
-    font-weight:700;
-
-    letter-spacing:5px;
-
-    user-select:none;
+    letter-spacing:6px;
 
 }
-
 #reloadCaptcha{
 
     width:46px;
@@ -170,13 +179,15 @@ body{
 
     background:#fff;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:24px;
+    padding:22px 24px;
 
-    box-shadow:0 8px 22px rgba(0,0,0,.08);
+    border:1px solid #edf1f4;
 
-    margin-bottom:18px;
+    box-shadow:0 10px 28px rgba(0,0,0,.06);
+
+    animation:fadeUp .35s ease;
 
 }
 
@@ -206,19 +217,25 @@ body{
 
 .method-badge{
 
-    display:inline-block;
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
 
     padding:6px 14px;
 
     margin:4px;
 
-    border-radius:25px;
+    border-radius:30px;
 
-    background:#e9f5ef;
+    background:#edf8f2;
 
     color:#00843D;
 
-    font-size:14px;
+    font-size:13px;
+
+    font-weight:600;
 
 }
 
@@ -239,6 +256,10 @@ body{
     font-weight:600;
 
     font-size:15px;
+
+    min-width:120px;
+
+    text-align:center;
 
 }
 
@@ -347,7 +368,7 @@ body{
 
     color:#666;
 
-    font-size:14px;
+    font-size:13px;
 
     margin-top:15px;
 
@@ -423,6 +444,47 @@ body{
         font-size:18px;
 
         letter-spacing:3px;
+
+    }
+
+}
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+@media(max-width:576px){
+
+    .header h2{
+
+        font-size:28px;
+
+    }
+
+    .header h3{
+
+        font-size:18px;
+
+    }
+
+    .search-card,
+    .result-card{
+
+        padding:18px;
 
     }
 
